@@ -1,0 +1,26 @@
+{
+  "name": "codexten/yii-filekit",
+  "type": "yii2-extension",
+  "description": "file storage and upload kit for yii 2.0 or higher ",
+  "keywords": [
+    "yiisoft",
+    "codexten",
+    "yii2"
+  ],
+  "require": {
+    "yii2-starter-kit/yii2-file-kit": "@stable"
+  },
+  "autoload": {
+    "psr-4": {
+      "codexten\\yii\\filekit\\": "src"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "2.0.x-dev"
+    },
+    "sconfig-plugin": {
+      "hidev": "config/hidev.php"
+    }
+  }
+}
