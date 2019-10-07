@@ -8,6 +8,7 @@
 
 namespace codexten\yii\filekit\controllers;
 
+use codexten\yii\filekit\actions\UploadAction;
 use yii\filters\VerbFilter;
 use yii\web\Controller;
 
@@ -38,7 +39,7 @@ class FileStorageController extends Controller
     {
         return [
             'upload' => [
-                'class' => 'trntv\filekit\actions\UploadAction',
+                'class' => UploadAction::class,
                 'deleteRoute' => 'upload-delete',
             ],
             'upload-delete' => [
